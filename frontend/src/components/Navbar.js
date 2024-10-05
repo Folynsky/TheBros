@@ -25,15 +25,15 @@ const Navbar = () => {
         icon: <HomeIcon />,
       },
       {
-        text: "About",
+        text: "Conocenos",
         icon: <InfoIcon />,
       },
       {
-        text: "Testimonials",
+        text: "Reviews",
         icon: <CommentRoundedIcon />,
       },
       {
-        text: "Contact",
+        text: "Contacto",
         icon: <PhoneRoundedIcon />,
       },
       {
@@ -43,9 +43,20 @@ const Navbar = () => {
     ];
     return (
       <nav>
-        <div className="nav-logo-container">
-        <img src={Logo} alt="" style={{ width: '200px', height: 'auto' }} />
-        </div>
+        <div className="nav-logo-container" style={{
+        display: 'flex',
+        alignItems: 'center', // Alineación vertical
+        marginRight: '20px'   // Espacio entre el logo y otros elementos
+    }}>
+        <img 
+            src={Logo} 
+            alt="Logo" 
+            style={{
+                width: '140px',
+                height: 'auto'
+            }} 
+        />
+    </div>
         <div className="navbar-links-container">
           <a href="">Home</a>
           <a href="">Conocenos</a>
