@@ -4,7 +4,6 @@ import BannerImage from "../Assets/home-banner-image.png";
 import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
-
 const Home = () => {
   return (
     <div className="home-container">
@@ -12,6 +11,21 @@ const Home = () => {
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
           <img src={BannerBackground} alt="" />
+        </div>
+        <div className="home-text-section">
+          <h1 className="primary-heading">
+            Tu postre favorito hasta la puerta de tu casa
+          </h1>
+          <p className="primary-text">
+          Disfruta de la dulzura en cada bocado, nuestros equipo se encargan de preparar los ingredientes más frescos y deliciosos, 
+          para que tú disfrutes nuestros productos.
+          </p>
+          <button className="secondary-button">
+            Ordena Ahora <FiArrowRight />{" "}
+          </button>
+        </div>
+        <div className="home-image-section">
+          <img src={BannerImage} alt="" />
         </div>
       </div>
     </div>
