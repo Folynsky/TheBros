@@ -320,8 +320,9 @@ nav {
   }
 }
 @media (max-width: 800px) {
-  .nav-logo-container {
-    max-width: 140px;
+  .nav-logo-container img {
+    max-width: 150px; /* Ajusta el valor según el tamaño que prefieras */
+    height: auto;
   }
   .navbar-links-container {
     display: none;
